@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+ <!-- mayur Pawar Code -->
+    <h1>MCQ Page</h1>
+<div class="container">
+    <h3 class="text-center mt-3">Any title You give here </h3>
+    <form action="/" method="POST">
+  <div class="form-group">
+    <label for="mcq1">If u want to take direct Input Value from User </label>
+    <input type="text" class="form-control" id="mcq1" name="mcq1" placeholder="Enter Value">
+  </div>
+  
+  <div class="form-group">
+ <!-- if ur mcq answe in integer the u used this type.at place value u can pass answer value( i pass 1 2 3 4) but u can change according to u.and if u
+   dont change then also its okay  -->
+    <label for="mcq2">Integer Qustion number 2 here</label>
+    <select  class="form-control custom-select" id="mcq2" name="mcq2">
+      <option value=1>1</option>
+      <option value=2>2</option>
+	  <option value=3>3</option>
+      <option value=4>4</option>
+    </select>
+  </div>
+
+
+  <div class="form-group">
+    <label for="mcq3">Question number 3 here</label>
+    <select  class="form-control custom-select" id="mcq3" name="mcq3">
+      <option value="option1">option1</option>
+      <option value="option2">option2 </option>
+	  <option value="option3">Option3 </option>
+      <option value="option4">Option4</option>
+      
+    </select>
+  </div>
+
+  
+  <button class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+{% endblock content %}
